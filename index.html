@@ -8,25 +8,49 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!--  Navbar  -->
-<nav class="relative container mx-auto p-6">
-<!--  Flex container  -->
+<header class="container relative mx-auto p-6">
+    <!--  Flex container  -->
     <div class="flex items-center justify-between">
         <!--  Logo  -->
         <div class="pt-2">
-            <img src="img/logo.svg" alt="logo">
+            <a href="#"><img src="img/logo.svg" alt="logo"></a>
         </div>
-<!--  Menu items  -->
-        <div class="hidden md:flex space-x-6">
+        <!--  Navbar  -->
+        <nav class="hidden space-x-4 md:flex lg:space-x-8">
             <a href="#" class="hover:text-darkGrayishBlue">Prising</a>
             <a href="#" class="hover:text-darkGrayishBlue">Product</a>
             <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
             <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
             <a href="#" class="hover:text-darkGrayishBlue">Community</a>
-        </div>
-<!--  Button  -->
-        <a href="#" class="hidden md:block p-3 px-6 pt-3 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+        </nav>
+        <!--  Button  -->
+        <a href="#" class="hidden py-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight md:block">Get
+            Started</a>
     </div>
-</nav>
+</header>
+<main>
+    <!--  Hero section  -->
+    <section id="hero" class="container mx-auto p-6 mt-10">
+        <!--  Flex items  -->
+        <div class="flex flex-col-reverse items-center md:flex-row">
+            <!--  Left item  -->
+            <div class="space-y-12 md:w-1/2 md:mb-32">
+                <h1 class="max-w-md font-bold text-4xl text-center md:text-5xl md:text-left">Bring everyone together to
+                    build better products.</h1>
+                <p class="max-w-sm text-darkGrayishBlue text-center md:text-left">Manage makes it simple for software teams to plan day-to-day tasks
+                    while keeping the larger team goals in view.</p>
+                <div class="flex justify-center md:justify-start">
+                    <!--  Button  -->
+                    <a href="#" class="py-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight">Get
+                        Started</a>
+                </div>
+            </div>
+            <!--  Right item  -->
+            <div class="md:w-1/2 self-start">
+                <img src="img/illustration-intro.svg" alt="illustration-intro">
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
