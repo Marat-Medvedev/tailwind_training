@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="container relative mx-auto p-6">
-    <!--  Flex container  -->
+    <!--  Desktop Menu  -->
     <div class="flex items-center justify-between">
         <!--  Logo  -->
         <div class="pt-2">
@@ -26,16 +26,32 @@
         <!--  Button  -->
         <a href="#" class="hidden py-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight md:block">Get
             Started</a>
+        <!--  Hamburger Button  -->
+        <button id="hamburger-btn" class="hamburger block md:hidden focus:outline-none">
+            <span class="hamburger__top"></span>
+            <span class="hamburger__middle"></span>
+            <span class="hamburger__bottom"></span>
+        </button>
+    </div>
+    <!--  Mobile Menu  -->
+    <div class="md:hidden">
+        <nav id="hamburger-menu" class="hidden py-8 mt-10 flex flex-col items-center self-end absolute left-6 right-6 space-y-6 font-bold bg-white drop-shadow-md sm:w-auto sm:self-center">
+            <a href="#" class="hover:text-darkGrayishBlue">Prising</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </nav>
     </div>
 </header>
 <main>
     <!--  Hero section  -->
     <section id="hero">
         <!--  Flex items  -->
-        <div class="container mx-auto p-6 mt-10 flex flex-col-reverse items-center md:flex-row md:items-start">
+        <div class="container mx-auto p-6 flex flex-col-reverse items-center md:mt-10 md:flex-row md:items-start">
             <!--  Left item  -->
             <div class="space-y-12 md:w-1/2">
-                <h1 class="max-w-md font-bold text-4xl text-center md:text-5xl md:text-left">Bring everyone together to
+                <h1 class="max-w-md font-bold text-5xl text-center md:text-left">Bring everyone together to
                     build better products.</h1>
                 <p class="max-w-sm text-darkGrayishBlue text-center md:text-left">Manage makes it simple for software teams to plan day-to-day tasks
                     while keeping the larger team goals in view.</p>
