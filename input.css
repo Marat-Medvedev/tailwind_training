@@ -24,3 +24,67 @@ body {
         background-image: url('../img/bg-simplify-section-mobile.svg');
     }
 }
+
+/* Hamburger menu */
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.25s;
+}
+
+.hamburger__top,
+.hamburger__middle,
+.hamburger__bottom {
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger__middle {
+    transform: translateY(7px);
+}
+
+.hamburger__bottom {
+    transform: translateY(14px);
+}
+
+/*.open {*/
+/*    transform: rotate(90deg);*/
+/*    transform: translateY(0);*/
+/*}*/
+
+/*.open .hamburger__top {*/
+/*    transform: rotate(45deg) translate(6px);*/
+/*}*/
+
+/*.open .hamburger__middle {*/
+/*  display: none;*/
+/*}*/
+
+/*.open .hamburger__bottom {*/
+/*    transform: rotate(-45deg) translateY(6px )translateX(-6px);*/
+/*}*/
+
+.open {
+    transform: rotate(90deg) translateY(0);
+}
+
+.open .hamburger__top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger__middle {
+    display: none;
+}
+
+.open .hamburger__bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
