@@ -528,6 +528,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -546,10 +550,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -862,32 +862,6 @@ body {
 .hamburger__bottom {
   transform: translateY(14px);
 }
-
-/*.open {*/
-
-/*    transform: rotate(90deg);*/
-
-/*    transform: translateY(0);*/
-
-/*}*/
-
-/*.open .hamburger__top {*/
-
-/*    transform: rotate(45deg) translate(6px);*/
-
-/*}*/
-
-/*.open .hamburger__middle {*/
-
-/*  display: none;*/
-
-/*}*/
-
-/*.open .hamburger__bottom {*/
-
-/*    transform: rotate(-45deg) translateY(6px )translateX(-6px);*/
-
-/*}*/
 
 .open {
   transform: rotate(90deg) translateY(0);

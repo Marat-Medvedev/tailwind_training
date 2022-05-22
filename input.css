@@ -56,23 +56,6 @@ body {
     transform: translateY(14px);
 }
 
-/*.open {*/
-/*    transform: rotate(90deg);*/
-/*    transform: translateY(0);*/
-/*}*/
-
-/*.open .hamburger__top {*/
-/*    transform: rotate(45deg) translate(6px);*/
-/*}*/
-
-/*.open .hamburger__middle {*/
-/*  display: none;*/
-/*}*/
-
-/*.open .hamburger__bottom {*/
-/*    transform: rotate(-45deg) translateY(6px )translateX(-6px);*/
-/*}*/
-
 .open {
     transform: rotate(90deg) translateY(0);
 }
