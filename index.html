@@ -52,8 +52,16 @@
         <div class="container mx-auto p-6 flex flex-col-reverse items-center md:mt-10 md:flex-row md:items-start">
             <!--  Left item  -->
             <div class="space-y-12 md:w-1/2">
-                <h1 class="max-w-md font-bold text-5xl text-center md:text-left">Bring everyone together to
-                    build better products.</h1>
+                <h1 class="max-w-md font-bold text-5xl text-center md:text-left">
+                    <span class="text">Bring everyone together to
+                    build <span class="relative inline-block">
+                            <span class="text-box absolute inline-block bottom-0 left-0 bg-brightRed -z-10 h-1"></span>
+                            better
+                        </span>
+                    </span>
+                    <br class="md:hidden"><span class="text-changing"></span>
+                    <span class="text-cursor">_</span>
+                </h1>
                 <p class="max-w-sm text-darkGrayishBlue text-center md:text-left">Manage makes it simple for software
                     teams to plan day-to-day tasks
                     while keeping the larger team goals in view.</p>
@@ -253,6 +261,9 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
