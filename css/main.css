@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
@@ -518,20 +522,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 1.5rem;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
-.left-1 {
-  left: 0.25rem;
+.left-0 {
+  left: 0px;
+}
+
+.\!-bottom-6 {
+  bottom: -1.5rem !important;
 }
 
 .-z-10 {
@@ -560,8 +560,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .-mt-14 {
@@ -588,36 +588,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-12 {
-  height: 3rem;
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-8 {
   height: 2rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
 .w-16 {
   width: 4rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .max-w-md {
@@ -735,11 +715,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-brightRedLight {
-  --tw-bg-opacity: 1;
-  background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
 }
 
 .bg-brightRedSupLight {
@@ -932,6 +907,10 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.swiper-pagination-bullet-active {
+  background: hsl(12, 88%, 59%);
+}
+
 .placeholder\:text-sm::-moz-placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1016,6 +995,10 @@ body {
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mt-24 {
+    margin-top: 6rem;
   }
 
   .md\:ml-auto {
